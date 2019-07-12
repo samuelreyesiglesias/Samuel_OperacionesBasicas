@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Samuel_OperacionesBasicas.Views.TransaccionAritmeticaView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Operaciones arirtmeticas basicas" />
+            <Entry Placeholder="Digite el 1er numero" x:Name="EntryPrimerNumero" Keyboard="Numeric"></Entry>
+            <Entry Placeholder="Digite el 2do numero" x:Name="EntrySegundoNumero" Keyboard="Numeric"></Entry>
+            <Entry Placeholder="Digite en minusculas el nombre de la operacion" x:Name="EntryOperacionElegida"></Entry>
+            <Button Text="Realizar Operacion" x:Name="ButtonEjecutarOperacion" Clicked="ButtonEjecutarOperacion_Clicked"></Button>
+            <Label Text="..." x:Name="LabelResultado"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
